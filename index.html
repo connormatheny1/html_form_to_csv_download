@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMS422 Project 1</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yqt6mzv.css">
+        <script type="text/javascript" src="script.js"></script>
+         
+        
+    </head>
+<body>
+<div class="wrapper">  
+<div class="zoomIn"> 
+<div class="zoomOut">  
+
+    </div>
+    </div> 
+    </div>
+    
+
+    
+<div id="formWrapper">
+    <header>
+        <h1>Please fill out this form</h1>
+        <h2>Click submit to have a CSV file generated with your information. Click finish once your file has downloaded.</h2>
+    </header>
+    
+        <form method = "post" action = "handler.php" id = "formTag">
+
+            <fieldset id = "fieldsetTag">
+
+                <p><input name = "first" type = "text" placeholder="First name" class="inputs" value=""></p>
+
+                <p><input name = "last"  type = "text" placeholder="Last name" class="inputs" value=""></p>
+
+                <p><input name = "major" type = "text" placeholder="Your major" class="inputs" value=""></p>
+
+                <p><input name = "hometown" type = "text" placeholder="Your hometown" class="inputs" value=""></p>
+
+                <p><input name = "favorite" type = "text" placeholder="Your favorite movie" class="inputs" value=""></p>
+                
+                
+                
+                <p><input name = "userName" type = "text" placeholder="Please name your file name" class="inputs" value=""></p>
+                
+                
+
+
+                <p>
+                    <input name = "submit" type = "submit" value="Submit" class="thanks"  id="primarySubmit" onclick="undisable()">
+                    
+                    <a href="successPage.html">
+                        
+                    <input name="continue" type="button" class = "disabledClass" value="Finish" disabled="true" id="secondSubmit">
+                        
+                    </a>
+                    
+                </p>
+                
+                
+                
+            
+            </fieldset>
+
+        </form>
+</div>
+<script>
+    
+    function undisable(){
+        
+        document.getElementById("secondSubmit").disabled = false;
+        document.getElementById("secondSubmit").setAttribute("class", "thanks")
+    }
+</script>     
+</body>
+</html>
